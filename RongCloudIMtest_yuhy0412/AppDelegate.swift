@@ -9,13 +9,79 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate , RCIMUserInfoDataSource {
 
     var window: UIWindow?
 
+    
+    func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
+        let userInfo = RCUserInfo()
+        userInfo.userId = userId
+        
+        switch userId{
+            case "oceanyu":
+                userInfo.name = "于海洋"
+                userInfo.portraitUri = "http://ww1.sinaimg.cn/crop.3.45.1919.1919.1024/6b805731jw1em0hze051hj21hk1isn5k.jpg"
+            case "oceanwang":
+                userInfo.name = "王海洋"
+                userInfo.portraitUri = "http://f.hiphotos.baidu.com/zhidao/pic/item/241f95cad1c8a7862495b8776109c93d70cf5008.jpg"
+            default :
+                print("")
+            
+            
+        }
+        return completion(userInfo)
+    }
+    
+    func connectserver(completion:()->Void){
+         RCIM.sharedRCIM().initWithAppKey("pkfcgjstfloo8")
+        RCIM.sharedRCIM().connectWithToken("KsQLk8niTtnoiOzC32HDmitU6PHPP/Km+E5rvUJDFDmt5WHUnmnXhF5bIxe7rbt35JTVu0dlGQFtXiz8or7GZg==",
+            success: { (_) -> Void in
+                
+                //NSLog("sucess")
+                
+                let currenUser = RCUserInfo(userId: "oceanyu", name: "海洋", portrait: "http://imgtest-dl.meiliworks.com/pic/m/7f/52/de1a09f3092151483c96c5d57baa_410_410.c1.jpg")
+    
+                RCIMClient.sharedRCIMClient().currentUserInfo = currenUser
+                
+                
+                print("connectserver sucess 1 ")
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    completion()
+                })
+                
+                
+                
+            },
+            error: { (_) -> Void in
+                
+                NSLog("error")
+            })
+            { () -> Void in
+                NSLog("in")
+        }
+        
+        
+        
+        
+        
+    }
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        //modify by yuhy 
+        
+        RCIM.sharedRCIM().userInfoDataSource = self
+ 
+        //end by yuhy
+//             let currenUser = RCUserInfo(userId: "oceanyu", name: "海洋", portrait: "http://imgtest-dl.meiliworks.com/pic/m/7f/52/de1a09f3092151483c96c5d57baa_410_410.c1.jpg")
+//        
+//        RCIMClient.sharedRCIMClient().currentUserInfo = currenUser
+        
+        
         return true
     }
 
