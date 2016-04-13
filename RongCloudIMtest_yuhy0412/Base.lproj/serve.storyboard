@@ -28,7 +28,7 @@
         <scene sceneID="WTw-Ab-jgb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Il-aW-cBM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="客服" id="U1M-Vh-MZa"/>
+                    <tabBarItem key="tabBarItem" title="客服" image="serve" id="U1M-Vh-MZa"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="AbstractSizeClassScreen[widthClass=compact]"/>
@@ -46,4 +46,7 @@
             <point key="canvasLocation" x="-234" y="45"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="serve" width="46" height="44"/>
+    </resources>
 </document>

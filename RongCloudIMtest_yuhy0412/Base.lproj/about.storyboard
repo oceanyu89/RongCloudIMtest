@@ -28,7 +28,7 @@
         <scene sceneID="o9n-MH-ovr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NWt-Hp-nIm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="关于" id="Fyp-i3-Ic8"/>
+                    <tabBarItem key="tabBarItem" title="关于" image="about" id="Fyp-i3-Ic8"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="AbstractSizeClassScreen[widthClass=compact]"/>
@@ -46,4 +46,7 @@
             <point key="canvasLocation" x="354" y="795"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="about" width="44" height="44"/>
+    </resources>
 </document>

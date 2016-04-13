@@ -28,7 +28,7 @@
         <scene sceneID="LQ0-ww-SAq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JfF-8x-S62" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="通讯录" image="custom_service_switch_to_admin.png" id="k5K-Rb-ZSK"/>
+                    <tabBarItem key="tabBarItem" title="通讯录" image="contact" id="k5K-Rb-ZSK"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="AbstractSizeClassScreen[widthClass=compact]"/>
@@ -47,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="custom_service_switch_to_admin.png" width="28" height="28"/>
+        <image name="contact" width="62" height="42"/>
     </resources>
 </document>

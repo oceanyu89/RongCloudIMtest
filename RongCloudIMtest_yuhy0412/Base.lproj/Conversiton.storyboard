@@ -53,7 +53,7 @@
         <scene sceneID="VXV-ge-bs4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kg3-zf-J9y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="会话" id="bxh-lq-SGB"/>
+                    <tabBarItem key="tabBarItem" title="会话" image="coversation" id="bxh-lq-SGB"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="AbstractSizeClassScreen[widthClass=compact]"/>
@@ -71,4 +71,7 @@
             <point key="canvasLocation" x="-234" y="-674"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coversation" width="59" height="45"/>
+    </resources>
 </document>
