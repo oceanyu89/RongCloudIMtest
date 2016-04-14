@@ -73,6 +73,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate , RCIMUserInfoDataSource {
         
         
         //modify by yuhy 
+        //获取leancloud 授权
+        
+        // applicationId 即 App Id，clientKey 是 App Key。
+//        [AVOSCloud setApplicationId:@"83gX8eqGeUdLiiDXjOev2tr1-gzGzoHsz"
+//        clientKey:@"wcDOqJ6Euf36WlgziLHV0xDV"];
+        AVOSCloud.setApplicationId("83gX8eqGeUdLiiDXjOev2tr1-gzGzoHsz", clientKey: "wcDOqJ6Euf36WlgziLHV0xDV")
+        
+        
         
         RCIM.sharedRCIM().userInfoDataSource = self
  

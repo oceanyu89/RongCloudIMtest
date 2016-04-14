@@ -28,6 +28,7 @@
 		BB65D1AF1CBCE4FF00445B8C /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB65D1AD1CBCE4FF00445B8C /* about.storyboard */; };
 		BB7B51561CBDFDD200AECE1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B51551CBDFDD200AECE1F /* LoginViewController.swift */; };
 		BB7B51581CBE01CE00AECE1F /* BoudsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B51571CBE01CE00AECE1F /* BoudsImage.swift */; };
+		BBD1D0C71CBF595C009F07D3 /* InputsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD1D0C61CBF595C009F07D3 /* InputsCheck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		BB65D1AE1CBCE4FF00445B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/about.storyboard; sourceTree = "<group>"; };
 		BB7B51551CBDFDD200AECE1F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BB7B51571CBE01CE00AECE1F /* BoudsImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoudsImage.swift; sourceTree = "<group>"; };
+		BBD1D0C61CBF595C009F07D3 /* InputsCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputsCheck.swift; sourceTree = "<group>"; };
+		BBD1D0C91CBF5E45009F07D3 /* testfile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = testfile.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				BB7B51571CBE01CE00AECE1F /* BoudsImage.swift */,
 				BB22ED141CBE0A3700286704 /* JSAnimatedImagesViewContraoller.swift */,
 				BB64D77C1CBE2C6800B2F922 /* RegTableViewController.swift */,
+				BBD1D0C61CBF595C009F07D3 /* InputsCheck.swift */,
+				BBD1D0C91CBF5E45009F07D3 /* testfile.playground */,
 			);
 			path = RongCloudIMtest_yuhy0412;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				BB7B51581CBE01CE00AECE1F /* BoudsImage.swift in Sources */,
 				BB65D1A31CBCD71E00445B8C /* ConversitionlistViewController.swift in Sources */,
 				BB5A07AF1CBE4BDE008482C0 /* SwiftNotice.swift in Sources */,
+				BBD1D0C71CBF595C009F07D3 /* InputsCheck.swift in Sources */,
 				BB65D1A11CBCB80D00445B8C /* ConversionViewController.swift in Sources */,
 				BB64D77D1CBE2C6800B2F922 /* RegTableViewController.swift in Sources */,
 				BB7B51561CBDFDD200AECE1F /* LoginViewController.swift in Sources */,

@@ -55,7 +55,7 @@ class ConversitionlistViewController: RCConversationListViewController {
         let appdelegate = UIApplication.sharedApplication().delegate as? AppDelegate
         appdelegate?.connectserver({ () -> Void in
             print("connectserver sucess 2 ")
-            
+//            异步链接
             
             //self.title = "connectserver sucess"
         })
@@ -70,6 +70,8 @@ class ConversitionlistViewController: RCConversationListViewController {
         self.setCollectionConversationType([RCConversationType.ConversationType_DISCUSSION.rawValue,
             RCConversationType.ConversationType_GROUP.rawValue])
         self.refreshConversationTableViewIfNeeded()
+        
+        
         
         //初始化UIRefreshControl
 //        var rc = UIRefreshControl()

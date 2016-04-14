@@ -1,4 +1,6 @@
 PODS:
+  - AJWValidator (0.0.8)
+  - AVOSCloud (3.2.7)
   - JSAnimatedImagesView (1.0.0):
     - MSWeakTimer (~> 1.0)
   - KxMenu (1)
@@ -11,12 +13,16 @@ PODS:
   - XHRealTimeBlur (1.7)
 
 DEPENDENCIES:
+  - AJWValidator
+  - AVOSCloud
   - JSAnimatedImagesView
   - KxMenu
   - PopMenu
   - RongCloudIMKit
 
 SPEC CHECKSUMS:
+  AJWValidator: ed00557b9cdcc38a8216aa9ddbd76b4eadb73615
+  AVOSCloud: 957d1508104d7c8ed501df9d9b734d7a98c2e047
   JSAnimatedImagesView: d5c5f561280171ce13f1f08ba9834c47a1f27bfc
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
   MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
