@@ -25,5 +25,8 @@ class BoudsImage: UIImageView {
 //            self.layer.masksToBounds = cornerRadius > 0
 //        }
 //    }
+    
+    
+    
 
 }

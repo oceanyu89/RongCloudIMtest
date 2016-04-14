@@ -25,10 +25,54 @@ extension UIView{
 
 class LoginViewController: UIViewController,JSAnimatedImagesViewDataSource {
 
+    @IBOutlet weak var loginuser: UITextField!
     
+    @IBOutlet weak var loginpassword: UITextField!
     
     @IBOutlet weak var wallpaperimageview: JSAnimatedImagesView!
     
+    @IBAction func loginClick(sender: AnyObject) {
+        
+        let usertext = self.loginuser.text
+        let passwordtext = self.loginpassword.text
+        //第一种方法
+        
+        let loginuserquery = AVQuery(className: "oceanuser")
+        let loginpasswordquery = AVQuery(className: "oceanuser")
+        
+        loginuserquery.whereKey("user", equalTo: usertext)
+        loginpasswordquery.whereKey("pass", equalTo: passwordtext)
+        
+
+        let allquery = AVQuery.andQueryWithSubqueries([loginuserquery,loginpasswordquery])
+        
+        allquery.getFirstObjectInBackgroundWithBlock { (object, error) -> Void in
+            if object == nil{
+                self.errorNotice("登录信息不正确")
+                //ShowCoversation
+                
+            }else
+            {
+                self.performSegueWithIdentifier("ShowCoversation", sender: self)
+            }
+            
+        }
+        //第二种方法
+//        AVUser.logInWithUsernameInBackground(usertext, password: passwordtext) { (user, error) -> Void in
+//            if user != nil{
+//                
+//                self.performSegueWithIdentifier("ShowCoversation", sender: self)
+//                
+//            }else
+//            {
+//                self.errorNotice("登录信息不正确")
+//
+//            }
+//            
+//        }
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

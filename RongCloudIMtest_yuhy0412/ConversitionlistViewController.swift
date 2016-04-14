@@ -17,9 +17,9 @@ class ConversitionlistViewController: RCConversationListViewController {
         
     KxMenu.showMenuInView(self.view, fromRect: frame!, menuItems:
         [
-            KxMenuItem ("返回对话",image:nil,target:self,action:"ClickMenu1"),
-            KxMenuItem ("通讯录",image:nil,target:self,action:"ClickMenu2"),
-            KxMenuItem ("客服",image:nil,target:self,action:"ClickMenu3")
+            KxMenuItem ("返回对话",image:UIImage(named: "coversation"),target:self,action:"ClickMenu1"),
+            KxMenuItem ("通讯录",image:UIImage(named: "serve"),target:self,action:"ClickMenu2"),
+            KxMenuItem ("客服",image:UIImage(named: "contact"),target:self,action:"ClickMenu3")
             
             
         ]
