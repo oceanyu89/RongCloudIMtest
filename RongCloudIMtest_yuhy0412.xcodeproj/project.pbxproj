@@ -122,9 +122,63 @@
 		BB65D1881CBCA2D200445B8C /* RongCloudIMtest_yuhy0412 */ = {
 			isa = PBXGroup;
 			children = (
-				BB5A07AD1CBE45EE008482C0 /* third party */,
 				BB65D1891CBCA2D200445B8C /* AppDelegate.swift */,
 				BB65D18B1CBCA2D200445B8C /* ViewController.swift */,
+				BB65D1901CBCA2D200445B8C /* Assets.xcassets */,
+				BB65D1921CBCA2D200445B8C /* LaunchScreen.storyboard */,
+				BB65D1951CBCA2D200445B8C /* Info.plist */,
+				BB65D19D1CBCA87900445B8C /* RongCloudIMtest_yuhy0412-Bridging-Header.h */,
+				BBD1D0C91CBF5E45009F07D3 /* testfile.playground */,
+				BB6FE0271CC0C13500425AE7 /* Storyboard */,
+				BB6FE0261CC0C11100425AE7 /* Losepass party */,
+				BB6FE0251CC0C0F900425AE7 /* Reg party */,
+				BB6FE0241CC0C0D500425AE7 /* Login party */,
+				BB6FE0231CC0C09400425AE7 /* Coversation party */,
+				BB5A07AD1CBE45EE008482C0 /* third party */,
+			);
+			path = RongCloudIMtest_yuhy0412;
+			sourceTree = "<group>";
+		};
+		BB6FE0231CC0C09400425AE7 /* Coversation party */ = {
+			isa = PBXGroup;
+			children = (
+				BB65D1A01CBCB80D00445B8C /* ConversionViewController.swift */,
+				BB65D1A21CBCD71E00445B8C /* ConversitionlistViewController.swift */,
+			);
+			name = "Coversation party";
+			sourceTree = "<group>";
+		};
+		BB6FE0241CC0C0D500425AE7 /* Login party */ = {
+			isa = PBXGroup;
+			children = (
+				BB7B51551CBDFDD200AECE1F /* LoginViewController.swift */,
+				BB7B51571CBE01CE00AECE1F /* BoudsImage.swift */,
+				BB22ED141CBE0A3700286704 /* JSAnimatedImagesViewContraoller.swift */,
+			);
+			name = "Login party";
+			sourceTree = "<group>";
+		};
+		BB6FE0251CC0C0F900425AE7 /* Reg party */ = {
+			isa = PBXGroup;
+			children = (
+				BB64D77C1CBE2C6800B2F922 /* RegTableViewController.swift */,
+				BBD1D0C61CBF595C009F07D3 /* InputsCheck.swift */,
+			);
+			name = "Reg party";
+			sourceTree = "<group>";
+		};
+		BB6FE0261CC0C11100425AE7 /* Losepass party */ = {
+			isa = PBXGroup;
+			children = (
+				BB6FE01A1CC0AC6300425AE7 /* LosePassTableViewController.swift */,
+				BB6FE0211CC0BD6400425AE7 /* BackUserTableViewController.swift */,
+			);
+			name = "Losepass party";
+			sourceTree = "<group>";
+		};
+		BB6FE0271CC0C13500425AE7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				BB65D18D1CBCA2D200445B8C /* Main.storyboard */,
 				BB2CB5AE1CBE215900F08C2C /* Login.storyboard */,
 				BB6FE01C1CC0B31800425AE7 /* Losepass.storyboard */,
@@ -132,22 +186,8 @@
 				BB65D1AA1CBCE45D00445B8C /* contact.storyboard */,
 				BB65D1A71CBCE44A00445B8C /* serve.storyboard */,
 				BB65D1A41CBCE2FC00445B8C /* Conversiton.storyboard */,
-				BB65D1901CBCA2D200445B8C /* Assets.xcassets */,
-				BB65D1921CBCA2D200445B8C /* LaunchScreen.storyboard */,
-				BB65D1951CBCA2D200445B8C /* Info.plist */,
-				BB65D19D1CBCA87900445B8C /* RongCloudIMtest_yuhy0412-Bridging-Header.h */,
-				BB65D1A01CBCB80D00445B8C /* ConversionViewController.swift */,
-				BB65D1A21CBCD71E00445B8C /* ConversitionlistViewController.swift */,
-				BB7B51551CBDFDD200AECE1F /* LoginViewController.swift */,
-				BB7B51571CBE01CE00AECE1F /* BoudsImage.swift */,
-				BB22ED141CBE0A3700286704 /* JSAnimatedImagesViewContraoller.swift */,
-				BB64D77C1CBE2C6800B2F922 /* RegTableViewController.swift */,
-				BBD1D0C61CBF595C009F07D3 /* InputsCheck.swift */,
-				BBD1D0C91CBF5E45009F07D3 /* testfile.playground */,
-				BB6FE01A1CC0AC6300425AE7 /* LosePassTableViewController.swift */,
-				BB6FE0211CC0BD6400425AE7 /* BackUserTableViewController.swift */,
 			);
-			path = RongCloudIMtest_yuhy0412;
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 		D65DB1966F5E020EE1E47A7A /* Pods */ = {

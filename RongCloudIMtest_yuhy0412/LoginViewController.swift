@@ -48,7 +48,7 @@ class LoginViewController: UIViewController,JSAnimatedImagesViewDataSource {
         
         allquery.getFirstObjectInBackgroundWithBlock { (object, error) -> Void in
             if object == nil{
-                self.errorNotice("登录信息不正确")
+                self.errorNotice("登录信息不对")
                 //ShowCoversation
                 
             }else

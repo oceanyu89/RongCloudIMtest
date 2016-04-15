@@ -10,9 +10,63 @@ import UIKit
 
 class LosePassTableViewController: UITableViewController {
 
+    @IBOutlet weak var comebackquestion: UITextBox!
+    
+    @IBOutlet weak var comebackanswer: UITextBox!
+    
+    @IBOutlet weak var comebackpassword: UITextField!
+    
+    
+    var cbuser : NSString = NSString()
+
+    @IBAction func uploadclick(sender: AnyObject) {
+        
+        self.pleaseWait()
+        let user = cbuser
+        let question = comebackquestion.text
+        let answer = comebackanswer.text
+        
+        
+        let userquery = AVQuery(className: "oceanuser")
+        let questionquery = AVQuery(className: "oceanuser")
+        let answerquery = AVQuery(className: "oceanuser")
+        
+        userquery.whereKey("user", equalTo: user)
+        questionquery.whereKey("question", equalTo: question)
+        answerquery.whereKey("answer", equalTo: answer)
+        
+        let allquery = AVQuery.andQueryWithSubqueries([userquery,questionquery,answerquery])
+        
+        allquery.getFirstObjectInBackgroundWithBlock { (object, error) -> Void in
+            
+            self.clearAllNotice()
+            if object != nil{
+                //let arryobjec = object as? NSArray
+                //print(object)
+                self.successNotice("查询完成")
+                let password = object.objectForKey("pass") as! String
+//                print(password)
+                self.comebackpassword.text = password
+                
+            }else
+            {
+                self.errorNotice("信息错误")
+            }
+            
+        }
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        comebackquestion.becomeFirstResponder()
+        
         self.navigationController?.navigationBarHidden = false
+        
+        self.title = "通过问题找回密码"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

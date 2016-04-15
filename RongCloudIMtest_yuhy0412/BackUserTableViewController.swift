@@ -10,10 +10,54 @@ import UIKit
 
 class BackUserTableViewController: UITableViewController {
 
+    @IBOutlet weak var comebackuser: UITextBox!
+    
+    
+    @IBAction func upclick(sender: AnyObject) {
+        
+        self.pleaseWait()
+        
+        let user = comebackuser.text
+        
+        let query = AVQuery(className: "oceanuser")
+        
+        query.whereKey("user", equalTo: user)
+        
+        query.getFirstObjectInBackgroundWithBlock { (object, error) -> Void in
+            
+            self.clearAllNotice()
+            
+            if object == nil{
+                self.errorNotice("账号不存在")
+               
+                
+            }else{
+//                self.errorNotice("账号不存在")
+                 self.performSegueWithIdentifier("ShowLosepass", sender: self)
+            }
+            
+        }
+        
+    }
+    
+
+    
+//    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+//        return false
+//    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
          self.navigationController?.navigationBarHidden = false
+        
+        self.title = "判断账号的有效性"
+        
+        comebackuser.becomeFirstResponder()
+        
+       
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,6 +70,11 @@ class BackUserTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    
+    
+    
     // MARK: - Table view data source
 
 //    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -83,14 +132,20 @@ class BackUserTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let desview : LosePassTableViewController = segue.destinationViewController as! LosePassTableViewController
+        
+        desview.cbuser = self.comebackuser.text!
+        
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
