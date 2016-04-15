@@ -26,6 +26,9 @@
 		BB65D1A91CBCE44A00445B8C /* serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB65D1A71CBCE44A00445B8C /* serve.storyboard */; };
 		BB65D1AC1CBCE45D00445B8C /* contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB65D1AA1CBCE45D00445B8C /* contact.storyboard */; };
 		BB65D1AF1CBCE4FF00445B8C /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB65D1AD1CBCE4FF00445B8C /* about.storyboard */; };
+		BB6FE01B1CC0AC6300425AE7 /* LosePassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FE01A1CC0AC6300425AE7 /* LosePassTableViewController.swift */; };
+		BB6FE01E1CC0B31800425AE7 /* Losepass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6FE01C1CC0B31800425AE7 /* Losepass.storyboard */; };
+		BB6FE0221CC0BD6400425AE7 /* BackUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6FE0211CC0BD6400425AE7 /* BackUserTableViewController.swift */; };
 		BB7B51561CBDFDD200AECE1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B51551CBDFDD200AECE1F /* LoginViewController.swift */; };
 		BB7B51581CBE01CE00AECE1F /* BoudsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B51571CBE01CE00AECE1F /* BoudsImage.swift */; };
 		BBD1D0C71CBF595C009F07D3 /* InputsCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD1D0C61CBF595C009F07D3 /* InputsCheck.swift */; };
@@ -57,6 +60,9 @@
 		BB65D1A81CBCE44A00445B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/serve.storyboard; sourceTree = "<group>"; };
 		BB65D1AB1CBCE45D00445B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/contact.storyboard; sourceTree = "<group>"; };
 		BB65D1AE1CBCE4FF00445B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/about.storyboard; sourceTree = "<group>"; };
+		BB6FE01A1CC0AC6300425AE7 /* LosePassTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LosePassTableViewController.swift; sourceTree = "<group>"; };
+		BB6FE01D1CC0B31800425AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Losepass.storyboard; sourceTree = "<group>"; };
+		BB6FE0211CC0BD6400425AE7 /* BackUserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUserTableViewController.swift; sourceTree = "<group>"; };
 		BB7B51551CBDFDD200AECE1F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BB7B51571CBE01CE00AECE1F /* BoudsImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoudsImage.swift; sourceTree = "<group>"; };
 		BBD1D0C61CBF595C009F07D3 /* InputsCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputsCheck.swift; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 				BB65D18B1CBCA2D200445B8C /* ViewController.swift */,
 				BB65D18D1CBCA2D200445B8C /* Main.storyboard */,
 				BB2CB5AE1CBE215900F08C2C /* Login.storyboard */,
+				BB6FE01C1CC0B31800425AE7 /* Losepass.storyboard */,
 				BB65D1AD1CBCE4FF00445B8C /* about.storyboard */,
 				BB65D1AA1CBCE45D00445B8C /* contact.storyboard */,
 				BB65D1A71CBCE44A00445B8C /* serve.storyboard */,
@@ -137,6 +144,8 @@
 				BB64D77C1CBE2C6800B2F922 /* RegTableViewController.swift */,
 				BBD1D0C61CBF595C009F07D3 /* InputsCheck.swift */,
 				BBD1D0C91CBF5E45009F07D3 /* testfile.playground */,
+				BB6FE01A1CC0AC6300425AE7 /* LosePassTableViewController.swift */,
+				BB6FE0211CC0BD6400425AE7 /* BackUserTableViewController.swift */,
 			);
 			path = RongCloudIMtest_yuhy0412;
 			sourceTree = "<group>";
@@ -217,6 +226,7 @@
 				BB65D1A91CBCE44A00445B8C /* serve.storyboard in Resources */,
 				BB65D1AC1CBCE45D00445B8C /* contact.storyboard in Resources */,
 				BB65D1911CBCA2D200445B8C /* Assets.xcassets in Resources */,
+				BB6FE01E1CC0B31800425AE7 /* Losepass.storyboard in Resources */,
 				BB65D19C1CBCA2EB00445B8C /* Podfile in Resources */,
 				BB65D18F1CBCA2D200445B8C /* Main.storyboard in Resources */,
 				BB2CB5B01CBE215900F08C2C /* Login.storyboard in Resources */,
@@ -285,9 +295,11 @@
 				BB5A07AF1CBE4BDE008482C0 /* SwiftNotice.swift in Sources */,
 				BBD1D0C71CBF595C009F07D3 /* InputsCheck.swift in Sources */,
 				BB65D1A11CBCB80D00445B8C /* ConversionViewController.swift in Sources */,
+				BB6FE01B1CC0AC6300425AE7 /* LosePassTableViewController.swift in Sources */,
 				BB64D77D1CBE2C6800B2F922 /* RegTableViewController.swift in Sources */,
 				BB7B51561CBDFDD200AECE1F /* LoginViewController.swift in Sources */,
 				BB22ED151CBE0A3700286704 /* JSAnimatedImagesViewContraoller.swift in Sources */,
+				BB6FE0221CC0BD6400425AE7 /* BackUserTableViewController.swift in Sources */,
 				BB65D18A1CBCA2D200445B8C /* AppDelegate.swift in Sources */,
 				BB5A07AC1CBE442B008482C0 /* UIView+ViewRecursion.m in Sources */,
 			);
@@ -350,6 +362,14 @@
 				BB65D1AE1CBCE4FF00445B8C /* Base */,
 			);
 			name = about.storyboard;
+			sourceTree = "<group>";
+		};
+		BB6FE01C1CC0B31800425AE7 /* Losepass.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB6FE01D1CC0B31800425AE7 /* Base */,
+			);
+			name = Losepass.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
