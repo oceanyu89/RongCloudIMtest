@@ -15,5 +15,5 @@
 
 
 
-#import <AVOSCloud/AVOSCloud.h>;
+#import <AVOSCloud/AVOSCloud.h>
 
